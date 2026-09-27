@@ -1,16 +1,12 @@
-# UK Short-Term Rental Exposure and Housing Market Growth
+# UK Short-Term Rental Exposure and Housing Market Growth Analysis
+[Dashboard](https://public.tableau.com/app/profile/ka.yan.chong/viz/AnalysingShorttermrentalactivitiyandpotentialhousingpressureinUKcities/Dashboard3)
+![Dashboard](images/dashboard.png)
 
 ## 1. Objective
 
-This project examines the relationship between **short-term rental activity and housing-market growth** across four UK cities:
-
-* Bristol
-* Edinburgh
-* Greater Manchester
-* London
+This project examines the relationship between **short-term rental activity and housing-market growth** across four UK cities: Bristol, Edinburgh, Greater Manchester and London
 
 The main objectives are to:
-
 1. Measure the **scale and composition** of the short-term rental market.
 2. Identify areas with higher concentrations of short-term rentals relative to the local housing stock.
 3. Examine the relationship between **short-term rental intensity, rental price growth, and house-price growth** over a five-year period.
@@ -24,10 +20,9 @@ The analysis is intended to provide a data-driven view of whether cities with gr
 
 The growth of short-term rentals has raised concerns about housing availability and affordability, particularly in areas with high concentrations of short-term lets.
 
-This project examines four UK cities — **Bristol, Edinburgh, Greater Manchester, and London** — to explore whether cities with greater short-term rental activity also experienced greater rental and house-price growth.
+This project examines four UK cities to explore whether cities with greater short-term rental activity also experienced greater rental and house-price growth.
 
 The analysis considers several indicators of short-term rental exposure, including:
-
 * The proportion of **entire-home listings**
 * The concentration of listings relative to the local housing stock
 * The proportion of listings associated with hosts managing multiple properties
@@ -38,34 +33,15 @@ The project also considers differences in the regulatory environments across the
 ---
 
 ## 3. Regulatory Context
-
-### Edinburgh / Scotland
-
-* Scotland has a mandatory short-term-let licensing scheme.
-* Edinburgh is a designated short-term-let control area, giving the local authority additional planning controls.
-
-### London
-
-* Short-term letting is generally permitted for up to **90 nights per calendar year** without planning permission.
-* Longer-term short-term letting may require planning permission.
-
-### Manchester
-
-* No city-wide short-term-let licensing scheme is currently in place.
-* Short-term lets are primarily governed by the wider national planning and regulatory framework.
-
-### Bristol
-
-* No equivalent city-wide short-term-let licensing scheme is currently in place.
-* Local planning and business-rate rules may apply depending on how a property is used.
-
-### England
-
-* The UK Government is introducing a mandatory national registration scheme for short-term lets.
-* The scheme is expected to begin in 2026.
+| Location | Regulatory context |
+|---|---|
+| **Edinburgh / Scotland** | Scotland has a mandatory short-term-let licensing scheme. Edinburgh is a designated short-term-let control area, giving the local authority additional planning controls. |
+| **London** | Short-term letting is generally permitted for up to **90 nights per calendar year** without planning permission. Longer-term short-term letting may require planning permission. |
+| **Manchester** | No city-wide short-term-let licensing scheme is currently in place. Short-term lets are primarily governed by the wider national planning and regulatory framework. |
+| **Bristol** | No equivalent city-wide short-term-let licensing scheme is currently in place. Local planning and business-rate rules may apply depending on how a property is used. |
+| **England** | The UK Government is introducing a mandatory national registration scheme for short-term lets. The scheme is expected to begin in 2026. |
 
 > **Note:** Regulatory information is included as contextual information rather than as a direct explanatory variable in the statistical analysis.
-
 ---
 
 # 4. What I Analyse
@@ -83,15 +59,12 @@ Listings associated with hosts listing more than one property
 ----------------------------------------------------------------
 Total short-term rental listings
 ```
-
 A higher value indicates a greater proportion of listings associated with multi-property hosts.
-
 ---
 
 ### 4.2 Where is short-term rental activity concentrated?
 
 I examine:
-
 * Number of short-term rental listings
 * Listing density relative to housing stock
 * Geographical distribution of listings
@@ -121,40 +94,16 @@ This analysis is observational and does not attempt to establish a causal relati
 
 This project uses data from two main sources.
 
-### 5.1 Office for National Statistics (ONS)
+(1) Office for National Statistics (ONS)
+The ONS data includes indicators relating to Housing Price Index, Private rental price index and Dwelling stock
 
-The ONS data includes indicators relating to:
-
-* Housing Price Index
-* Private rental price index
-* Dwelling stock
+(2) Inside Airbnb
+Inside Airbnb provides short-term rental listing data containing variables including Neighbourhood group, Neighbourhood, Latitude, Longitude, Room type, Calculated host listings count, Reviews, Availability
 
 More information:
-
 * [Office for National Statistics](https://www.ons.gov.uk/)
-
-### 5.2 Inside Airbnb
-
-Inside Airbnb provides short-term rental listing data containing variables such as:
-
-* Neighbourhood group
-* Neighbourhood
-* Latitude
-* Longitude
-* Room type
-* Calculated host listings count
-* Reviews
-* Availability
-
-More information:
-
 * [Inside Airbnb](https://insideairbnb.com/explore/)
-
-### Raw Data
-
-Raw CSV files used in the analysis:
-
-> **To be added**
+* [Raw data](https://github.com/Meowcky/Short-Term-Rental-Exposure-and-Housing-Market-Growth/tree/main/data)
 
 ---
 
@@ -541,10 +490,8 @@ The visualisations focus on:
 * Rental price growth
 * House-price growth
 * Comparison between short-term rental exposure and housing-market growth
-
-### Dashboard
-
-> **Dashboard image to be added**
+  
+[Tableau link](https://public.tableau.com/app/profile/ka.yan.chong/viz/AnalysingShorttermrentalactivitiyandpotentialhousingpressureinUKcities/Dashboard3)
 
 ---
 
@@ -566,27 +513,10 @@ Similarly, the analysis does not establish that short-term rentals have no effec
 
 # 13. Limitations
 
-### 1. Limited neighbourhood-level housing-market data
+| Limitation                            | Description                                                                                                                                                                                                                                                 |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Limited neighbourhood-level data**  | Rental growth data was not available for all four locations, limiting local-level analysis.                                                                                                                                                                 |
+| **Limited number of locations**       | Only four UK locations are analysed, so findings may not generalise to other areas.                                                                                                                                                                         |
+| **Airbnb data coverage**              | Inside Airbnb covers Airbnb only, not the full short-term rental market. Listings also do not show actual occupancy, revenue, or year-round availability. Therefore, listing counts indicate **potential short-term rental exposure**, not actual activity. |
+| **Different regulatory environments** | The four locations have different planning and regulatory frameworks, which also change over time and are difficult to compare directly.                                                                                                                    |
 
-Neighbourhood-level rental growth data was not available for all four locations. This limits the ability to examine relationships between short-term rental exposure and housing-market growth at a local level.
-
-### 2. Limited number of locations
-
-Only four UK locations are included in the analysis. The findings therefore cannot necessarily be generalised to other UK cities or regions.
-
-### 3. Airbnb does not represent the entire short-term rental market
-
-Inside Airbnb data captures Airbnb listings but does not represent all short-term rental platforms.
-
-In addition, listing data does not necessarily indicate:
-
-* Actual occupancy
-* Revenue
-* Whether a listing is actively available throughout the year
-* Whether an entire-home listing is being used as a full-time short-term rental
-
-Therefore, listing counts are a measure of **potential short-term rental exposure**, rather than actual short-term rental activity.
-
-### 4. Regulatory environments are difficult to compare directly
-
-The four locations operate under different planning and regulatory frameworks. Regulatory rules also change over time, making direct comparison difficult.
