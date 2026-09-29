@@ -44,7 +44,7 @@ The project also considers differences in the regulatory environments across the
 > **Note:** Regulatory information is included as contextual information rather than as a direct explanatory variable in the statistical analysis.
 ---
 
-# 4. What I Analyse
+## 4. What I Analyse
 
 The analysis is organised around three main questions.
 
@@ -90,7 +90,7 @@ This analysis is observational and does not attempt to establish a causal relati
 
 ---
 
-# 5. Data Sources
+## 5. Data Sources
 
 This project uses data from two main sources.
 
@@ -107,7 +107,7 @@ More information:
 
 ---
 
-# 6. Technologies
+## 6. Technologies
 
 | Purpose            | Technology  |
 | ------------------ | ----------- |
@@ -120,7 +120,7 @@ The project primarily uses **SQL** for data cleaning, transformation and analysi
 
 ---
 
-# 7. Data Analysis Process
+## 7. Data Analysis Process
 
 ## Step 1 — Data Cleaning
 
@@ -263,7 +263,7 @@ The same general cleaning process was applied to the other locations.
 
 ---
 
-# 8. SQL Analysis
+## 8. SQL Analysis
 
 ## Part 1 — Individual Location Analysis
 
@@ -296,7 +296,7 @@ The **entire-home listing share** is used as an indicator of potential housing e
 
 ---
 
-## 8.2 Commercialised Index
+### 8.2 Commercialised Index
 
 The commercialisation measure is based on the number of properties listed by a host.
 
@@ -358,7 +358,7 @@ This is a **proxy for commercialisation**, rather than a direct measure of wheth
 
 ---
 
-## 8.3 Geographic Distribution
+### 8.3 Geographic Distribution
 
 Listings associated with multi-property hosts can be extracted using:
 
@@ -376,7 +376,7 @@ These data are used to examine the geographical distribution of potentially comm
 
 ---
 
-# 9. Combining Data Across Locations
+## 9. Combining Data Across Locations
 
 After analysing each location individually, summary tables were created to combine the results across the four locations.
 
@@ -455,7 +455,7 @@ This creates a consistent structure that can be used for comparison across the f
 
 ---
 
-# 10. Aggregate Tables for Visualisation
+## 10. Aggregate Tables for Visualisation
 
 The final SQL tables were aggregated to provide Tableau with analysis-ready datasets.
 
@@ -476,7 +476,7 @@ These aggregated tables reduce the amount of transformation required in Tableau 
 
 ---
 
-# 11. Data Visualisation
+## 11. Data Visualisation
 
 The final datasets were imported into **Tableau** to create interactive dashboards.
 
@@ -495,7 +495,7 @@ The visualisations focus on:
 
 ---
 
-# 12. Conclusion
+## 12. Conclusion
 
 The analysis shows differences in short-term rental exposure across the four locations.
 
@@ -511,7 +511,7 @@ Similarly, the analysis does not establish that short-term rentals have no effec
 
 ---
 
-# 13. Limitations
+## 13. Limitations
 
 | Limitation                            | Description                                                                                                                                                                                                                                                 |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
